@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<body>
+ <header id="header" class="header">
+   <nav id="gnav">
+     <div class="nav-box">
+       <h1>
+         <a href="index.html">Front engineer <br>Anna Takahashi</a>
+       </h1>
+        <ul class="pc-menu">
+          <li><a class="pc-nav" href="about.html">About</a></li>
+          <li><a class="pc-nav" href="works.html">Works</a></li>
+          <li><a class="pc-nav" href="https://chooopin.hatenablog.com/">Blog</a></li>
+          <li><a class="pc-nav" href="mailto:n-8iac@i.softbank.jp">Contact</a></li>
+        </ul>
+     </div>
+   </nav>
+   
+<!-- ハンバーガーメニュー -->
+<nav class="global-nav">
+  <ul class="global-nav__list">
+      <li class="global-nav__item"><a href="index.html">Top</a></li>
+      <li class="global-nav__item"><a href="about.html">About</a></li>
+      <li class="global-nav__item"><a href="works.html">Works</a></li>
+      <li class="global-nav__item"><a href="https://chooopin.hatenablog.com/" target="blank">Blog</a></li>
+      <li class="global-nav__item"><a href="mailto:n-8iac@i.softbank.jp" target="blank">Contact</a></li>
+  </ul>
+  <div class="global-nav__item-sns">
+    <a class="sns-icon" href="https://twitter.com/kicca48074951" target="blank"><i class="fab fa-twitter"></i></a>
+    <a class="sns-icon" href="https://www.instagram.com/kicca__design/" target="blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</nav>
+<div class="hamburger" id="js-hamburger">
+  <span class="hamburger__line hamburger__line--1"></span>
+  <span class="hamburger__line hamburger__line--2"></span>
+  <span class="hamburger__line hamburger__line--3"></span>
+</div>
+<div class="black-bg" id="js-black-bg"></div>
+
+</header>
+
+<!-- SNSnav -->
+ <div class="snsNav">
+  <a class="sns-icon" href=""><i class="fab fa-twitter"></i></a>
+  <a class="sns-icon" href=""><i class="fab fa-instagram"></i></a>
+ </div>
+ <!-- ここまでSNSnav -->
+
+<!-- ここからWorks -->
+
+
+<div class="work">
+  
+  <h2>Works</h2>
+ 
+  <div class="work1">
+    <a href="http://stg1.athena-tech.tokyo/%E3%82%B9%E3%82%B4%E3%82%A4%E4%BC%9A%E8%AD%B0%E3%81%A9%E3%81%99%E3%81%88%E6%A7%98/"><img src="img/sugoi.png" alt="すごい会議"></a>
+    <p>株式会社すごい会議どすえ様のLP作成</p>
+  </div>
+
+  <div class="work1">
+    <a href="https://github.com/chopin78/mine#mine"><img src="img/main.png" alt="マインスイーパー"></a>
+    <p>JavaScriptでマインスイーパー作成</p>
+
+  </div>
+
+</div>
+
+
+
+ <footer class="footer">
+  <p>&copy; anna takahashi</p>
+</footer>
+
+<!-- ハンバーガーメニュー JS-->
+
+<script>
+ function toggleNav() {
+   var body = document.body;
+   var hamburger = document.getElementById('js-hamburger');
+   var blackBg = document.getElementById('js-black-bg');
+ 
+   hamburger.addEventListener('click', function() {
+     body.classList.toggle('nav-open');
+   });
+   blackBg.addEventListener('click', function() {
+     body.classList.remove('nav-open');
+   });
+ }
+ toggleNav();
+</script>
+
+</body>
+</html>

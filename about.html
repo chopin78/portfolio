@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<body>
+ <header id="header" class="header">
+   <nav id="gnav">
+     <div class="nav-box">
+       <h1>
+         <a href="index.html">Front engineer <br>Anna Takahashi</a>
+       </h1>
+        <ul class="pc-menu">
+          <li><a class="pc-nav" href="about.html">About</a></li>
+          <li><a class="pc-nav" href="works.html">Works</a></li>
+          <li><a class="pc-nav" href="https://chooopin.hatenablog.com/">Blog</a></li>
+          <li><a class="pc-nav" href="mailto:n-8iac@i.softbank.jp">Contact</a></li>
+        </ul>
+     </div>
+   </nav>
+   
+<!-- ハンバーガーメニュー -->
+<nav class="global-nav">
+  <ul class="global-nav__list">
+      <li class="global-nav__item"><a href="index.html">Top</a></li>
+      <li class="global-nav__item"><a href="about.html">About</a></li>
+      <li class="global-nav__item"><a href="works.html">Works</a></li>
+      <li class="global-nav__item"><a href="https://chooopin.hatenablog.com/" target="blank">Blog</a></li>
+      <li class="global-nav__item"><a href="mailto:n-8iac@i.softbank.jp" target="blank">Contact</a></li>
+  </ul>
+  <div class="global-nav__item-sns">
+    <a class="sns-icon" href="https://twitter.com/kicca48074951" target="blank"><i class="fab fa-twitter"></i></a>
+    <a class="sns-icon" href="https://www.instagram.com/kicca__design/" target="blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</nav>
+<div class="hamburger" id="js-hamburger">
+  <span class="hamburger__line hamburger__line--1"></span>
+  <span class="hamburger__line hamburger__line--2"></span>
+  <span class="hamburger__line hamburger__line--3"></span>
+</div>
+<div class="black-bg" id="js-black-bg"></div>
+
+</header>
+
+<!-- SNSnav -->
+ <div class="snsNav">
+  <a class="sns-icon" href="https://twitter.com/kicca48074951"><i class="fab fa-twitter"></i></a>
+  <a class="sns-icon" href="https://www.instagram.com/kicca__design"><i class="fab fa-instagram"></i></a>
+ </div>
+ <!-- ここまでSNSnav -->
+
+ <!-- ここからaboutHead -->
+
+ <section id="profile">
+
+  <div class="wrapper">
+      <h2 class="title">About</h2>
+      <p class="title-sub"></p>
+
+  <div class="profile-flexAll">
+  <div class="profile">
+      <p class="paragraph">名前：高橋　杏奈（Anna Takahashi）<br>現住所：神奈川県横浜市<br>生年月日：1993年7月8日（27歳）<br>学歴：国立音楽院　ピアノ調律科　卒業<br>職歴：某通信社にて編集アシスタント（Illustrator・Photoshop使用）</p>
+  
+      
+      <p class="paragraph">エンジニアになるため2020年7月から独学で勉強開始。Webサイト制作、アプリ開発のお仕事をいくつか頂きながら日々成長しております。</p>
+
+      <p class="paragraph">お客様とのコミュニケーションを大切にし、レス・納品スピード、丁寧かつ正確さを心がけております。</p>
+  </div>
+  <div class="profile-image">
+         
+          <div class="profile-image-l"><img src="img/about.jpg" width="470px" height="auto" alt="プロフィール写真"></div>
+      </div>
+  </div>
+
+</div>
+</section>
+
+<!-- ここまでaboutHead -->
+
+<!-- ここからskilis -->
+<h2>Skills</h2>
+
+<div class="skill">
+  <div class="skills">
+    <p>
+    HTML ・・・・・・・ <span>★★★★★</span><br>
+    CSS ・・・・・・・・ <span>★★★★★</span><br>
+    JavaScript ・・・・・ <span>★★★★☆</span><br>
+    PHP ・・・・・・・・<span>★★★☆☆</span><br>
+    Illustrator ・・・・・ <span>★★★★☆</span><br>
+    Photoshop ・・・・・<span>★★★☆☆</span><br>
+    </p>
+
+  </div>
+
+</div>
+
+
+ <!-- Footer -->
+ <footer class="footer">
+  <p>&copy; anna takahashi</p>
+</footer>
+
+<!-- ハンバーガーメニュー JS-->
+
+<script>
+ function toggleNav() {
+   var body = document.body;
+   var hamburger = document.getElementById('js-hamburger');
+   var blackBg = document.getElementById('js-black-bg');
+ 
+   hamburger.addEventListener('click', function() {
+     body.classList.toggle('nav-open');
+   });
+   blackBg.addEventListener('click', function() {
+     body.classList.remove('nav-open');
+   });
+ }
+ toggleNav();
+</script>
