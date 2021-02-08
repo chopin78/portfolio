@@ -1,23 +1,32 @@
 @charset "UTF-8";
 
 body {
-    display: block;
-    background-color: #fff;
-    font-size: 15px;
-    font-family: '游ゴシック','YuGothic','ヒラギノ角ゴ ProN W3','メイリオ','Meiryo','sans-serif';
-    line-height: 1.9;
-    letter-spacing: 0.08rem;
-    font-weight: normal;
-    color: #333;
+  display: block;
+  background-color: #fff;
+  font-size: 15px;
+  font-family: '游ゴシック','YuGothic','ヒラギノ角ゴ ProN W3','メイリオ','Meiryo','sans-serif';
+  line-height: 1.9;
+  letter-spacing: 0.08rem;
+  font-weight: normal;
+  color: #333;
 }
-
-
 /* Heaader */
 #header {
   display: block;
   margin-bottom: 14px;
   padding: 0 1rem;
 }
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  } 
+}  
 
 
 .nav-box {
@@ -26,12 +35,10 @@ body {
   justify-content: space-between;
   max-width: 1080px;
   height: 90px;
-  /* padding: 20px; */
+  padding: 20px; 
   margin: 0 auto;
 }
-.global-nav__list, .global-nav__item-sns {
-  display: none;
-}
+
 
 h1 {
   display: flex;
@@ -43,24 +50,18 @@ h1 {
   letter-spacing: .15rem;
 }
 
+
 h1:hover {
   opacity: 0.7;
 }
+
 
 .nav-box ul {
   display: flex;
   align-items: center;
 }
 
-.nav-box li a {
-  position: relative;
-  display: inline-block;
-  font-size: 15px;
-  height: 50px;
-  margin: 0 1.3rem;
-  letter-spacing: 0.2rem;
-  line-height: 50px;
-}
+
 
 .nav-box li a:hover {
   border-bottom: 1px solid #333;
@@ -71,65 +72,53 @@ h1:hover {
 }
 
 
-/* pcメニューとsnsNavを隠す */
 
-
-h1{
-  font-size: 90%;
-  letter-spacing: .04rem;
-}
-
-img.main-visual {
-  width: 300px;
-  top: 40px;
-  right: -10px;
-
-}
-
-.sp {
-display: block;
-}
-
-
-/* SNSnav */
-.snsNav {
-  position: fixed;
-  top: 40%;
-  right: 10px;
-  bottom: 30px;
-  height: 100vh;
-  width: 50px;
-  padding: 0 10px;
-  z-index: 10;
-}
-
-.sns-icon {
+/* ここからworks */
+.work{
   text-align: center;
-  writing-mode: vertical-rl;
-  margin: 10px 0;
-  font-size: 25px;
-  color: #555;
+}
+.work  img{
+width: 350px;
+margin-bottom: 10px;
 }
 
-.sns-icon:hover {
-  color: #92BDE6;
+.work1{
+  margin-bottom: 130px;
 }
+
+
+
+/* footer */
+footer {
+  font-size: 12px;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #dcdcdc;
+  text-align: center;
+  color: #fff;
+}
+
+
+@media screen and (min-width: 769px){ 
+
+
+  .nav-box li a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    height: 50px;
+    margin: 0 1.3rem;
+    letter-spacing: 0.2rem;
+    line-height: 50px;
+  }
+
+
 
 /* main */
 img {
   vertical-align: bottom;
   max-width: 100%;
   height: auto;
-}
-
-img.main-visual {
-  width: 700px;
-  top: 50px;
-  right: 0;
-}
-
-.sp {
-  display: none;
 }
 
 
@@ -139,14 +128,13 @@ img.main-visual {
   position: relative;
 }
 
-/* .sp-main , .nav-box-sp{
+ .sp-main , .nav-box-sp ,.global-nav__list, .global-nav__item-sns{
   display: none;
-} */
+}  
 
 /*フォント*/
 
-
-.Headline{
+.headLine{
   position: absolute;
   margin-left: 50px;
   top: 50%;
@@ -158,30 +146,13 @@ img.main-visual {
   animation: SlideIn 2s ;
 }
 
-@keyframes SlideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-80px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* footer */
-footer {
-  font-size: 12px;
-  width: 100%;
-  padding: 20px 0;
-  background-color: #dcdcdc;
-  text-align: center;
-  color: #fff;
-}
-
 
 
 /* ここからabout */
+
+.profile-sp{
+  display: none;
+}
 
 .wrapper{
   margin: 0 0 80px 0;
@@ -204,38 +175,23 @@ h2{
 .profile-flexAll {
   display: flex;
 
-}
+} 
 
 .profile {
   max-width: 500px;
   height: auto;
   padding: 60px;
-  margin-left: auto;
-  margin-right: 80px;
+  margin-left: 80px;
+  margin-right: auto;
   background: #F2F8FC;
+ 
 }
 .profile-image {
-  margin-right: auto;
+  margin-left: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-
-.paragraph {
-  padding: 10px 0;
-}
-
-h3 {
-  font-family: 'Unna', serif;
-  font-size: 30px;
-  letter-spacing: .3rem;
-  line-height: 1;
-  font-weight: normal;
-  border-left: 15px solid #ECF5FA;
-  padding-left: 15px;
-  padding-right: 10px;
-  margin-bottom: 60px;
-}
 
 .skill{
   max-width: 800px;
@@ -257,15 +213,5 @@ h3 {
   color: #8fbc8f;
 }
 
-/* ここからworks */
-.work{
-  text-align: center;
-}
-.work  img{
-width: 350px;
-margin-bottom: 10px;
 }
 
-.work1{
-  margin-bottom: 130px;
-}
