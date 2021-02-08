@@ -1,6 +1,6 @@
 
 /* タブレット */
-@media screen and (min-width: 481px){
+@media (max-width: 1020px) and (min-width: 768px) {
  
 .nav-box li a {
   position: relative;
@@ -96,7 +96,7 @@ h2{
 
 
 /* スマホレスポンシブ480px */
-@media screen and (max-width:480px){
+@media (max-width: 767px) { 
 
   .sp-main img{
     vertical-align: bottom;
