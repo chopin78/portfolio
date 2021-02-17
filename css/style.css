@@ -188,7 +188,7 @@ h2{
 }
 .profile-image {
   margin-left: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -204,9 +204,14 @@ h2{
 }
 
 .skills{
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   color: #696969;
+}
+
+.skills p {
+  display: inline-block;
+  text-align: left;
 }
 
 .skills span{

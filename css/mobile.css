@@ -257,7 +257,7 @@ h2{
 }
 
 .profile {
-  max-width: 300px;
+  max-width: 330px;
   height: auto;
   font-size: 11px;
   padding: 28px;
@@ -278,9 +278,9 @@ h2{
 
 
 .skill{
-  max-width: 300px;
+  max-width: 330px;
   height: auto;
-  padding: 30px;
+  padding: 20px;
   margin-left: auto;
   margin-right:auto;
   margin-bottom: 100px;
@@ -288,7 +288,7 @@ h2{
 }
 
 .skills{
-  font-size: 13px;
+  font-size: 11px;
   text-align: center;
   color: #696969;
 }
