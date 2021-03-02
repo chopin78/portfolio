@@ -241,6 +241,26 @@ li.global-nav__item:hover {
 .nav-box-sp li a:active {
     opacity: 0.5;
   }
+
+
+
+.scrollDown p {
+  font-size: 8px;
+  margin-left: -30px;
+  letter-spacing: 6px;
+}
+
+.scrollDown span {
+  position: absolute;
+  top: 50;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+  margin-left: -30px;
+  
+}
+
   
  /* ここからabout */
 
@@ -250,7 +270,7 @@ h2{
   font-weight: normal;
   letter-spacing: .4rem;
   line-height: 1.2;
-  padding-top: 30px;
+  padding-top: 120px;
   margin-bottom: 20px;
   font-family: 'Unna',serif;
   text-align: center;
@@ -276,6 +296,12 @@ h2{
   margin-bottom: 30px;
 }
 
+.study{
+  max-width: 50px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .skill{
   max-width: 330px;
@@ -296,5 +322,84 @@ h2{
 .skills span{
   color: #8fbc8f;
 }
+
+.myVision{
+  max-width: 800px;
+  height: auto;
+  padding: 60px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 100px;
+  background: #F2F8FC;
+}
+
+.myVision p span {
+  background-color: #ff9;
+}
+
+.skill{
+  max-width: 800px;
+  height: auto;
+  padding: 60px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 100px;
+  background: #F2F8FC;
+}
+
+.skills{
+  font-size: 20px;
+  text-align: center;
+  color: #696969;
+}
+
+.skills p {
+  display: inline-block;
+  text-align: left;
+}
+
+.skills span{
+  color: #8fbc8f;
+}
+
+
+table {
+  /* border-collapse: collapse; */
+  margin: 0 auto;
+  padding: 0;
+  width: 250px;
+      box-shadow: 0 0 15px -6px #00000073;
+}
+table tr {
+  background-color: #fff;
+}
+table tbody tr:hover{
+  background-color: #fffae9;
+}
+table th,
+table td {
+  padding: 10px ;
+  border-bottom: 1px solid #eee;
+}
+table thead th {
+    font-size: 18px;
+    padding: 10px;
+}
+table thead tr{
+  background-color: #8fbc8f;
+  color:#fff;
+}
+table tbody th {
+  text-align: left;
+  font-size: 13px;
+}
+
+.txt{
+  text-align: left;
+  color: #000;
+  font-weight: bold;
+}
+
+
 
 }
