@@ -72,6 +72,14 @@ h2{
 }
 
 
+.study{
+  max-width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .skill{
   max-width: 600px;
   height: auto;
@@ -296,8 +304,8 @@ h2{
   margin-bottom: 30px;
 }
 
-.study{
-  max-width: 50px;
+.study img{
+  max-width: 380px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
